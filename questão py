@@ -1,0 +1,15 @@
+
+import random
+
+pessoas = []
+
+quantidade = int(input("Quantas pessoas compraram rifas? "))
+
+for i in range(quantidade):
+    nome = input(f"Digite o nome da pessoa {i + 1}: ")
+    pessoas.append(nome)
+
+ganhador = random.choice(pessoas)
+
+print("\n Sorteio realizado!")
+print("O ganhador do prêmio foi:", ganhador)
